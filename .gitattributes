@@ -1,0 +1,14 @@
+# Set the default behavior to handle all files automatically
+* text=auto
+
+# Force LF line endings on checkout for text files
+*.js text eol=lf
+*.ts text eol=lf
+*.json text eol=lf
+*.sh text eol=lf
+*.md text eol=lf
+
+# Denote binary files so Git leaves them untouched
+*.png binary
+*.jpg binary
+
