@@ -4,10 +4,10 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 authors = [
-    { name = "bonnybabukachappilly", email = "bonnybabukachappilly@gmail.com" }
+    { name = "bonnybabukachappilly", email = "bonnybabukachappilly@gmail.com" },
 ]
 requires-python = ">=3.12"
-dependencies = []
+dependencies = ["asyncua>=2.0.1", "robodk>=5.9.4"]
 
 [project.scripts]
 bridge = "bridge:main"
@@ -15,3 +15,16 @@ bridge = "bridge:main"
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "autopep8>=2.3.2",
+    "flake8>=7.3.0",
+    "isort>=8.0.1",
+    "mypy>=2.3.0",
+    "ruff>=0.15.22",
+]
+
+[[tool.mypy.overrides]]
+module = "robodk.*"
+ignore_missing_imports = true
