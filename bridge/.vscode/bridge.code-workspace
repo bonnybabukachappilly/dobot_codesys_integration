@@ -4,5 +4,15 @@
 			"path": ".."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"files.associations": {
+			"*.xacro": "xml",
+			"plyconfig.json": "jsonc"
+		},
+		"taipyStudio.gUI.elementsFilePaths": [],
+		"cSpell.words": [
+			"ASSM",
+			"robomath"
+		]
+	}
 }
