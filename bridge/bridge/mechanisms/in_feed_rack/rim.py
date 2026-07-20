@@ -28,8 +28,8 @@ TARGETS: dict[str, str] = {
 }
 
 # Speed & Acceleration
-JOINT_SPEED = 500.0
-JOINT_ACCELERATION = 250.0
+JOINT_SPEED = 2000.0
+JOINT_ACCELERATION = 2500.0
 
 # ****************************************************************************
 # self._rdk.ShowMessage(str(type(current)))
@@ -60,7 +60,7 @@ class TVRimMechanism:
         self._targets: RimTargets = self.__create_targets()
         self._frames: RimFrames = self.__create_frames()
 
-        self._ref_part_name = REF_PART_FRAME
+        self._ref_part_name = REF_PART_NAME
         self._tolerance = 0.1
 
         self.initialize()
